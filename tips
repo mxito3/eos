@@ -1,0 +1,15 @@
+1. 数据默认目录
+    ～/.local/share
+2. database dirty flag set (likely due to unclean shutdown): 
+    a. --hard-replay
+    b. 把数据删了
+        --delete-all-blocks  
+    c. 1.4以后无需replay，只需使用snapshots
+3. wallet 
+    cleos wallet list
+    cleos wallet unlock
+4. account
+    cleos create account eosio bob EOS7mMjHJLzdsRHd4nXuknkNXjwhYcxAZ5as5zYXt5CAWJEd156Bk 
+    cleos create account eosio alice EOS7mMjHJLzdsRHd4nXuknkNXjwhYcxAZ5as5zYXt5CAWJEd156Bk
+5. public key 
+    cleos get account alice
